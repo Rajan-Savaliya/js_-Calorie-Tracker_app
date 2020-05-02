@@ -41,3 +41,11 @@ const StorageCtrl = (function(){
       });
       localStorage.setItem('items', JSON.stringify(items));
     },
+    deleteItemFromStorage: function(id){
+      let items = JSON.parse(localStorage.getItem('items'));
+      
+      items.forEach(function(item, index){
+        if(id === item.id){
+          items.splice(index, 1);
+        }
+      });
