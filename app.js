@@ -22,3 +22,8 @@ const StorageCtrl = (function(){
         localStorage.setItem('items', JSON.stringify(items));
       }
     },
+    getItemsFromStorage: function(){
+      let items;
+      if(localStorage.getItem('items') === null){
+        items = [];
+      }
