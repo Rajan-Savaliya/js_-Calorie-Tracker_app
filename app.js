@@ -31,3 +31,5 @@ const StorageCtrl = (function(){
       }
       return items;
     },
+    updateItemStorage: function(updatedItem){
+      let items = JSON.parse(localStorage.getItem('items'));
