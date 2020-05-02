@@ -26,4 +26,8 @@ const StorageCtrl = (function(){
       let items;
       if(localStorage.getItem('items') === null){
         items = [];
+      } else {
+        items = JSON.parse(localStorage.getItem('items'));
       }
+      return items;
+    },
