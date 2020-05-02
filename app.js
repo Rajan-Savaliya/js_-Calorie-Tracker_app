@@ -484,3 +484,4 @@ const App = (function(ItemCtrl, StorageCtrl, UICtrl){
 
 // Initialize App
 App.init();
+// nothing is work well
