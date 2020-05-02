@@ -475,7 +475,7 @@ const App = (function(ItemCtrl, StorageCtrl, UICtrl){
       // Add total calories to UI
       UICtrl.showTotalCalories(totalCalories);
 
-      // Load event listener  
+      // Load event listener  //--code achge it
       loadEventListeners();
     }
   }
